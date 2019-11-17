@@ -1,0 +1,27 @@
+{
+  "name": "guitarfix",
+  "version": "1.0.0",
+  "description": "Simple MVC sample",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BartekCK/GuitarFix.git"
+  },
+  "author": "Bartlomiej Kotarski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BartekCK/GuitarFix/issues"
+  },
+  "homepage": "https://github.com/BartekCK/GuitarFix#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "pug": "^2.0.4"
+  }
+}
