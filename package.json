@@ -17,11 +17,7 @@
   },
   "homepage": "https://github.com/BartekCK/GuitarFix#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "connect-flash": "^0.1.1",
-    "cookie-parser": "^1.4.4",
     "express": "^4.17.1",
-    "express-session": "^1.17.0",
     "pug": "^2.0.4"
   }
 }
