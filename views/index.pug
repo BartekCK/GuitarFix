@@ -1,5 +1,41 @@
 html
     head
         link(rel="stylesheet" href="/css/main.css")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700")
     body
-        h1 Hello World
+        .home.guitar-fix
+            header.app-header
+                .logo
+                    img.logo__icon(src="/img/home-icon.png" )
+                    span.logo__text GuitarFix
+                nav.app-nav
+                    ul.app-nav__list
+                        li.app-nav__list-item
+                            a.app-nav__link.app-nav__link--is-active(href="#") About me
+                        li.app-nav__list-item
+                            a.app-nav__link(href="#") Contact
+            .about
+                section.slogan
+                    h1.slogan__header
+                        | Guitar is my life.
+                    p.slogan__text
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        | It has survived not only five centuries, but also the leap into electronic typesetting,
+                        | remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                        | sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                        | Aldus PageMaker including versions of Lorem Ipsum.
+        .second-home
+            form.lightbox__form(action="/applications" method="POST")
+                .lightbox__form-control
+                    label.lightbox__label What's your name?
+                    input.lightbox__input(placeholder="John Snow" type="text" name="name")
+                .lightbox__form-control
+                    label.lightbox__label What's your phone number?
+                    input.lightbox__input(placeholder="+ 48 000 000 000" type="text" name="phone")
+                .lightbox__form-control
+                    label.lightbox__label Leave a message
+                    textarea.lightbox__input(placeholder="Please feel free to ask us anything" rows="3" name="message")
+                .lightbox__actions
+                    button.btn.btn--primary Send message

@@ -1,3 +1,60 @@
-h1{
-    color: red;
+body{
+    margin: 0;
+    background: #222;
+    color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about { display: flex; align-items: center; height: 100vh; padding: 0 75px;  }
+
+.home{
+    background: url("../img/guitar-header.jpg");
+    background-size: cover;
+
+}
+
+.second-home{
+    background: url("../img/guitar-second.jpg");
+
+}
+
+.logo{
+    position: absolute;
+    border: 1px solid rgba(255,255,255,.17);
+    left: 20px;
+    top: 20px;
+    padding: 15px;
+    width: auto;
+
+}
+.logo__icon {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 5px;
+    padding-right: 5px; }
+
+
+.logo__text {
+    display: inline-block;
+    opacity: .43;
+    font-size: 25px;
+    margin-top: 2px;
+    color: #ffffff;
+}
+
+.app-nav { float: right; }
+.app-nav__list { list-style: none; display: flex; }
+.app-nav__list-item { font-size: 15px; text-transform: uppercase; padding: 0 25px; }
+
+.app-nav__link {color: red; opacity: .43; text-decoration: none; display: block; padding: 5px 5px; }
+.app-nav__link:focus { transition: .2s all ease-in-out; transform: scale(1.1); outline: none; box-shadow: none; }
+.app-nav__link:hover { border-bottom: 1px solid #fff; }
+
+.slogan { max-width: 65%; }
+.slogan__header { margin: 0 0 20px; font-weight: normal; font-family: 'Bodoni 72', sans-serif; font-size: 52px; }
+.slogan__text { font-size: 16px; color: #d0c4bc; font-weight: 100; line-height: 24px; max-width: 500px; }
+
+.lightbox__form{
+    display: block;
 }
