@@ -1,5 +1,4 @@
-const home = (req, res) => {
+exports.home = (req, res) => {
     res.render('index');
-}
+};
 
-exports.home = home;
