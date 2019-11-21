@@ -20,9 +20,6 @@ $ npm start
 ![contact](public/img/contact.png)
 
 ## Usage
-```bash
-$ node server.mjs
-```
 
 If you want to use your authentication you should create:
 ```$xslt
