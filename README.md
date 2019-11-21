@@ -5,16 +5,12 @@ It' simple example MVC in Node using express.js.
 ## Packages
 
 ```bash
-$ npm install dotenv
+$ npm install
 ```
-```
-$ npm install express
-```
-```
-$ npm install nodemailer
-```
-```
-$ npm install pug
+
+## Run
+```bash
+$ npm start
 ```
 
 ## Views
@@ -25,7 +21,7 @@ $ npm install pug
 
 ## Usage
 ```bash
-$ node server.js
+$ node server.mjs
 ```
 
 If you want to use your authentication you should create:
@@ -35,16 +31,12 @@ $ touch .env
 
 and enter your login details there.
 ```
-PASSWORD = XXXXXXX
-EMAIL = XXXXXXXXX
+#Credentials
+EMAIL = test@gmail.com
+PASSWORD = test
+
+#Data
+FROM = test1@wp.pl
+TO = test2@wp.pl
 ```
-You also should change  ****formController.js**** 
-test email on your email
-```javascript
-let mailOptions = {
-    from: 'test1@gmail.com',//Change
-    to: 'test2@gmail.com',//Change
-    subject: `${req.body.name} ${req.body.phone}`,
-    body: req.body.message
-};
-```
+

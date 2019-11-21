@@ -1,4 +1,5 @@
-const app = require('./app');
+import {app} from'./app.mjs';
+
 const PORT = process.env.PORT || 90;
 
 app.listen(PORT, () => {

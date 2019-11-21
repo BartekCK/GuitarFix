@@ -1,7 +1,9 @@
-const nodeMailer = require('nodemailer');
-require('dotenv').config();
+import nodeMailer from'nodemailer';
+import dotenv from "dotenv";
+dotenv.config({ silent: process.env.NODE_ENV === 'production' });
 
-exports.sendFrom = (req, res) => {
+
+export const sendFrom = (req, res) => {
     console.log(req.body);
     const transporter = nodeMailer.createTransport({
         service: 'gmail',
@@ -10,7 +12,7 @@ exports.sendFrom = (req, res) => {
             pass: process.env.PASSWORD
         }
     });
-
+    console.log(process.env.PASSWORD);
     const mailOptions = {
         from: process.env.FROM,
         to: process.env.TO,
